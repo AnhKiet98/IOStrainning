@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "180DB82C-888C-4E89-9115-B9447F145EFB"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D475B2EE-1567-4976-9E1E-11D293DF95BE"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MVVM-Observables/GetUser/Controllers/UserViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "D475B2EE-1567-4976-9E1E-11D293DF95BE - 15c6ab18e685c55a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Swift.Array&lt;MVVM_Observables.User&gt;) -&gt; () in MVVM_Observables.UserViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "MVVM-Observables"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/phananhkiet/Downloads/MVVM%20training/MVVM-Observables/MVVM-Observables/GetUser/Controllers/UserViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "183">
+               </Location>
+               <Location
+                  uuid = "D475B2EE-1567-4976-9E1E-11D293DF95BE - 3840a4849fe53109"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #2 (Swift.Array&lt;MVVM_Observables.User&gt;) -&gt; () in MVVM_Observables.UserViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "MVVM-Observables"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/phananhkiet/Downloads/MVVM%20training/MVVM-Observables/MVVM-Observables/GetUser/Controllers/UserViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "33">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "20B76709-BE01-4D92-908B-253708D67AE0"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MVVM-Observables/GetUser/ModelView/UserViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "UserViewModel"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E52982C8-F871-4D03-8CB0-12B4E46044EB"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MVVM-Observables/GetUser/Protocol/Observable.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "Observable"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "17BED3AD-A55D-4B82-9E46-316EC0D060AC"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MVVM-Observables/GetUser/Protocol/Observable.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "10"
+            endingLineNumber = "10"
+            landmarkName = "Observable"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "17BED3AD-A55D-4B82-9E46-316EC0D060AC - 86c735921f62902f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MVVM_Observables.Observable.deinit"
+                  moduleName = "MVVM-Observables"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/phananhkiet/Downloads/MVVM%20training/MVVM-Observables/MVVM-Observables/GetUser/Protocol/Observable.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "10"
+                  endingLineNumber = "10"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "17BED3AD-A55D-4B82-9E46-316EC0D060AC - 2303b0b284337d30"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MVVM_Observables.Observable.__deallocating_deinit"
+                  moduleName = "MVVM-Observables"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/phananhkiet/Downloads/MVVM%20training/MVVM-Observables/MVVM-Observables/GetUser/Protocol/Observable.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "17BED3AD-A55D-4B82-9E46-316EC0D060AC - 15d12ba635505f77"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MVVM_Observables.Observable.deinit"
+                  moduleName = "MVVM-Observables"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/phananhkiet/Downloads/MVVM%20training/IOSTranning/MVVM-Observables/GetUser/Protocol/Observable.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "10"
+                  endingLineNumber = "10"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "17BED3AD-A55D-4B82-9E46-316EC0D060AC - b015ae86ae01b618"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MVVM_Observables.Observable.__deallocating_deinit"
+                  moduleName = "MVVM-Observables"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/phananhkiet/Downloads/MVVM%20training/IOSTranning/MVVM-Observables/GetUser/Protocol/Observable.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "20">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "41221603-A1D8-4DB3-82B7-978CDC5F74A9"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MVVM-Observables/GetUser/Controllers/UserViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "41221603-A1D8-4DB3-82B7-978CDC5F74A9 - 9683a257410d3a03"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MVVM_Observables.UserViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "MVVM-Observables"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/phananhkiet/Downloads/MVVM%20training/MVVM-Observables/MVVM-Observables/GetUser/Controllers/UserViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "275">
+               </Location>
+               <Location
+                  uuid = "41221603-A1D8-4DB3-82B7-978CDC5F74A9 - 15c6ab18e685c585"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Swift.Array&lt;MVVM_Observables.User&gt;) -&gt; () in MVVM_Observables.UserViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "MVVM-Observables"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/phananhkiet/Downloads/MVVM%20training/MVVM-Observables/MVVM-Observables/GetUser/Controllers/UserViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "172">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D489C132-F0B9-4EC4-AD7F-0B204ACBC1E1"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MVVM-Observables/Common/LoginRepository.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "loginUser(userName:passWord:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "D489C132-F0B9-4EC4-AD7F-0B204ACBC1E1 - 26a15a20d7d804aa"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (MVVM_Observables.Result&lt;Foundation.Data&gt;) -&gt; () in MVVM_Observables.LoginRepository.loginUser(userName: Swift.String, passWord: Swift.String, completion: (MVVM_Observables.Result&lt;MVVM_Observables.UserData&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "MVVM-Observables"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/phananhkiet/Downloads/MVVM%20training/MVVM-Observables/MVVM-Observables/Common/LoginRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "287">
+               </Location>
+               <Location
+                  uuid = "D489C132-F0B9-4EC4-AD7F-0B204ACBC1E1 - 65d58ab05cd1537d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (MVVM_Observables.Result&lt;MVVM_Observables.APIResponse&gt;) -&gt; () in MVVM_Observables.LoginRepository.loginUser(userName: Swift.String, passWord: Swift.String, completion: (MVVM_Observables.Result&lt;MVVM_Observables.APIResponse&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "MVVM-Observables"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/phananhkiet/Downloads/MVVM%20training/MVVM-Observables/MVVM-Observables/Common/LoginRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "239">
+               </Location>
+               <Location
+                  uuid = "D489C132-F0B9-4EC4-AD7F-0B204ACBC1E1 - cc02ca87ee0cd180"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (MVVM_Observables.Result&lt;MVVM_Observables.APIResponse&gt;) -&gt; () in MVVM_Observables.LoginRepository.loginUser(userName: Swift.String, passWord: Swift.String, completion: (MVVM_Observables.Result&lt;MVVM_Observables.APIResponse&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "MVVM-Observables"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/phananhkiet/Downloads/MVVM%20training/IOSTranning/MVVM-Observables/Common/LoginRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "164">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C9037401-B1A2-4991-838F-7AF20D39D595"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MVVM-Observables/GetUser/Controllers/InfoViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "viewDidAppear(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
