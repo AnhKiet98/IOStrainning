@@ -8,15 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		262DFF062A4922FF00F7F826 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262DFF052A4922FF00F7F826 /* LoginViewController.swift */; };
-		262DFF092A4927A100F7F826 /* IconTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262DFF082A4927A100F7F826 /* IconTextField.swift */; };
 		262DFF0B2A4944A200F7F826 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262DFF0A2A4944A200F7F826 /* LoginViewModel.swift */; };
-		262DFF0D2A49721400F7F826 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262DFF0C2A49721400F7F826 /* HTTPMethod.swift */; };
-		262DFF0F2A49722A00F7F826 /* RequestAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262DFF0E2A49722A00F7F826 /* RequestAPI.swift */; };
-		262DFF112A49752A00F7F826 /* LoginRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262DFF102A49752A00F7F826 /* LoginRepository.swift */; };
-		262DFF152A4A697800F7F826 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262DFF142A4A697800F7F826 /* UserData.swift */; };
-		262DFF172A4A79FF00F7F826 /* UserDataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262DFF162A4A79FF00F7F826 /* UserDataStorage.swift */; };
-		262DFF212A4BB56100F7F826 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262DFF202A4BB56100F7F826 /* User.swift */; };
-		262DFF232A4BB82D00F7F826 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262DFF222A4BB82D00F7F826 /* InfoViewController.swift */; };
 		B7329D3B2A47E4A100DD2CAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7329D2A2A47E4A100DD2CAA /* Main.storyboard */; };
 		B7329D3C2A47E4A100DD2CAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7329D2D2A47E4A100DD2CAA /* Assets.xcassets */; };
 		B7329D3D2A47E4A100DD2CAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7329D2E2A47E4A100DD2CAA /* LaunchScreen.storyboard */; };
@@ -27,15 +19,7 @@
 
 /* Begin PBXFileReference section */
 		262DFF052A4922FF00F7F826 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		262DFF082A4927A100F7F826 /* IconTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IconTextField.swift; path = ../../../../../../Desktop/GoogleMap/GoogleMap/Extensions/IconTextField.swift; sourceTree = "<group>"; };
 		262DFF0A2A4944A200F7F826 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
-		262DFF0C2A49721400F7F826 /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
-		262DFF0E2A49722A00F7F826 /* RequestAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestAPI.swift; sourceTree = "<group>"; };
-		262DFF102A49752A00F7F826 /* LoginRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRepository.swift; sourceTree = "<group>"; };
-		262DFF142A4A697800F7F826 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
-		262DFF162A4A79FF00F7F826 /* UserDataStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataStorage.swift; sourceTree = "<group>"; };
-		262DFF202A4BB56100F7F826 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		262DFF222A4BB82D00F7F826 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		B7329D2B2A47E4A100DD2CAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B7329D2D2A47E4A100DD2CAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B7329D2F2A47E4A100DD2CAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -57,14 +41,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		262DFF072A49279800F7F826 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				262DFF082A4927A100F7F826 /* IconTextField.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
 		B7329D1F2A47E4A100DD2CAA /* MVVM-Observables */ = {
 			isa = PBXGroup;
 			children = (
@@ -79,7 +55,6 @@
 		B7329D202A47E4A100DD2CAA /* GetUser */ = {
 			isa = PBXGroup;
 			children = (
-				262DFF072A49279800F7F826 /* Extensions */,
 				B7329D212A47E4A100DD2CAA /* Protocol */,
 				B7329D232A47E4A100DD2CAA /* ModelView */,
 				B7329D252A47E4A100DD2CAA /* Model */,
@@ -92,7 +67,6 @@
 		B7329D212A47E4A100DD2CAA /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
-				262DFF0C2A49721400F7F826 /* HTTPMethod.swift */,
 				B7329D432A47E53B00DD2CAA /* Observable.swift */,
 			);
 			path = Protocol;
@@ -109,8 +83,6 @@
 		B7329D252A47E4A100DD2CAA /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				262DFF202A4BB56100F7F826 /* User.swift */,
-				262DFF142A4A697800F7F826 /* UserData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -119,7 +91,6 @@
 			isa = PBXGroup;
 			children = (
 				262DFF052A4922FF00F7F826 /* LoginViewController.swift */,
-				262DFF222A4BB82D00F7F826 /* InfoViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -145,9 +116,6 @@
 		B7329D312A47E4A100DD2CAA /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				262DFF0E2A49722A00F7F826 /* RequestAPI.swift */,
-				262DFF102A49752A00F7F826 /* LoginRepository.swift */,
-				262DFF162A4A79FF00F7F826 /* UserDataStorage.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -248,18 +216,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				262DFF152A4A697800F7F826 /* UserData.swift in Sources */,
 				B7329D442A47E53B00DD2CAA /* Observable.swift in Sources */,
-				262DFF212A4BB56100F7F826 /* User.swift in Sources */,
 				B7329D412A47E4A100DD2CAA /* AppDelegate.swift in Sources */,
-				262DFF112A49752A00F7F826 /* LoginRepository.swift in Sources */,
-				262DFF092A4927A100F7F826 /* IconTextField.swift in Sources */,
 				262DFF0B2A4944A200F7F826 /* LoginViewModel.swift in Sources */,
-				262DFF0D2A49721400F7F826 /* HTTPMethod.swift in Sources */,
-				262DFF172A4A79FF00F7F826 /* UserDataStorage.swift in Sources */,
-				262DFF232A4BB82D00F7F826 /* InfoViewController.swift in Sources */,
 				262DFF062A4922FF00F7F826 /* LoginViewController.swift in Sources */,
-				262DFF0F2A49722A00F7F826 /* RequestAPI.swift in Sources */,
 				B7329D422A47E4A100DD2CAA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

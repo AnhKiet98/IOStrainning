@@ -5,59 +5,92 @@
 //  Created by PHAN ANH KIET on 26/06/2023.
 //
 
+// Import UIKit framework for UI related classes and functions
 import UIKit
 
+// Define LoginViewModel class
 class LoginViewModel {
     
+    // Create observable userName with initial value as empty string
     var userName: Observable<String?> = Observable("")
+    // Create observable passWord with initial value as empty string
     var passWord: Observable<String?> = Observable("")
+    // Create observable isLogin with initial value as false
     var isLogin: Observable<Bool> = Observable(false)
+    // Create observable errorMessage with initial value as empty string
     var errorMessage: Observable<String?> = Observable("")
+    // Declare optional viewController
     var viewController: UIViewController?
-    var storyboard: UIStoryboard?
-    private var loginRepository = LoginRepository()
     
-    
+    // Define login function
     func login() {
-        self.isLogin.value = true
+        // Unwrap userName and passWord values
         guard let userName = userName.value, let passWord = passWord.value else {
-            // Handle missing userName or password
+            // Update errorMessage if either userName or passWord is nil
+            self.errorMessage.value = "Please enter both username and password."
+            // Exit function
             return
         }
-        self.loginRepository.loginUser(userName: userName, passWord: passWord) { result in
-            switch result {
-            case .success(let apiResponse):
-                self.isLogin.value = false
-                do{
-                    if (200...299).contains(apiResponse.statusCode) {
-                        let decoder = JSONDecoder()
-                        let userData = try decoder.decode(UserData.self, from: apiResponse.data)
-                        self.errorMessage.value = ""
-                        UserDataStorage.saveUserData(userData: userData)
-                        DispatchQueue.main.async { [self] in
-                            let storyboard = UIStoryboard(name: "Main", bundle: nil) // Replace "Main" with your storyboard name if different
-                            
-                            guard let nextForm = storyboard.instantiateViewController(withIdentifier: "InfoViewController") as? InfoViewController else {
-                                return
-                                
-                            }
-                            nextForm.modalPresentationStyle = .fullScreen
-                            viewController?.present(nextForm, animated: true, completion: nil)
-                        }
-                    } else {
-                        let result = try JSONSerialization.jsonObject(with: apiResponse.data,options: JSONSerialization.ReadingOptions.mutableContainers)
-                        if let result = result as? [String: Any], let errorMessage = result["errorMessage"] as? String {
-                            self.errorMessage.value = errorMessage
-                        }
-                    }
-                } catch{
-                    
-                }
-            case .failure(let error):
-                // Xử lý lỗi
-                print("Error:", error)
+        
+        // Check if userName is empty
+        if userName.isEmpty{
+            // Update errorMessage if either userName is empty
+            self.errorMessage.value = "Username cannot be empty."
+            // Exit function
+            return
+        }
+        
+        // Check if passWord is empty
+        if passWord.isEmpty {
+            // Update errorMessage if either passWord is empty
+            self.errorMessage.value = "Password cannot be empty."
+            // Exit function
+            return
+        }
+        
+        
+        // Check if userName is shorter than 4 characters
+        if userName.count < 4 {
+            // Update errorMessage if either userName is shorter than 4 characters
+            self.errorMessage.value = "Username must be at least 4 characters long."
+            // Exit function
+            return
+        }
+        
+        // Check if passWord is shorter than 4 characters
+        if passWord.count < 4 {
+            // Update errorMessage if either passWord is shorter than 4 characters
+            self.errorMessage.value = "Password must be at least 4 characters long."
+            // Exit function
+            return
+        }
+        
+        // Clear errorMessage
+        self.errorMessage.value = ""
+        // Perform the following block after a delay of 3 seconds
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3) { [weak self] in
+            // Unwrap self to avoid retain cycle
+            guard let self = self else { return }
+            // Check if userName and passWord are both "admin"
+            if userName == "admin" && passWord == "admin" {
+                // Create success alert
+                let alertController = UIAlertController(title: "Success", message: "Login successful", preferredStyle: .alert)
+                // Add "OK" button to alert
+                alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                
+                // Present the success alert
+                self.viewController?.present(alertController, animated: true, completion: nil)
+            } else {
+                // Create fail alert
+                let alertController = UIAlertController(title: "Fail", message: "Invalid username or password", preferredStyle: .alert)
+                // Add "OK" button to alert
+                alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                
+                // Present the fail alert
+                self.viewController?.present(alertController, animated: true, completion: nil)
             }
         }
     }
 }
+
 
