@@ -31,37 +31,22 @@ class LoginViewModel {
             // Exit function
             return
         }
-        
-        // Check if userName is empty
-        if userName.isEmpty{
-            // Update errorMessage if either userName is empty
+
+        // Check if userName is empty and shorter than 4 characters
+        if userName.isEmpty {
             self.errorMessage.value = "Username cannot be empty."
-            // Exit function
             return
-        }
-        
-        // Check if passWord is empty
-        if passWord.isEmpty {
-            // Update errorMessage if either passWord is empty
-            self.errorMessage.value = "Password cannot be empty."
-            // Exit function
-            return
-        }
-        
-        
-        // Check if userName is shorter than 4 characters
-        if userName.count < 4 {
-            // Update errorMessage if either userName is shorter than 4 characters
+        } else if userName.count < 4 {
             self.errorMessage.value = "Username must be at least 4 characters long."
-            // Exit function
             return
         }
-        
-        // Check if passWord is shorter than 4 characters
-        if passWord.count < 4 {
-            // Update errorMessage if either passWord is shorter than 4 characters
+
+        // Check if passWord is empty and shorter than 4 characters
+        if passWord.isEmpty {
+            self.errorMessage.value = "Password cannot be empty."
+            return
+        } else if passWord.count < 4 {
             self.errorMessage.value = "Password must be at least 4 characters long."
-            // Exit function
             return
         }
         
