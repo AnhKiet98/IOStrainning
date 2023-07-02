@@ -21,7 +21,6 @@ class LoginViewController : UIViewController {
     // Override viewDidLoad method of UIViewController
     override func viewDidLoad() {
         super.viewDidLoad()
-        viewModel.viewController = self  // Assign self to viewController property of viewModel
         setupBindings()  // Call setupBindings method to bind data
     }
     
@@ -45,6 +44,27 @@ class LoginViewController : UIViewController {
         viewModel.errorMessage.bind { [weak self] errorMessage in
             DispatchQueue.main.async {
                 self?.errorMessage.text = errorMessage
+            }
+        }
+        
+        // Bind the isLogin
+        viewModel.isLogin.bind { [weak self] isLogin in
+            DispatchQueue.main.async {
+                // Check if the isLogin value is nil
+                guard let isLogin = isLogin else {
+                    return
+                }
+                // If isLogin is true, display the success alert
+                if isLogin {
+                    let alertController = UIAlertController(title: "Success", message: "Login successful", preferredStyle: .alert)
+                    alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                    self?.present(alertController, animated: true, completion: nil)
+                } else {
+                    // If isLogin is false, display the fail alert
+                    let alertController = UIAlertController(title: "Fail", message: "Invalid username or password", preferredStyle: .alert)
+                    alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                    self?.present(alertController, animated: true, completion: nil)
+                }
             }
         }
     }
